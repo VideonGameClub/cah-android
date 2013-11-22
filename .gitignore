@@ -1,0 +1,8 @@
+/bin/*
+/gen/*
+/out/*
+.project
+.classpath
+.idea
+*.iml
+proguard-project.txt

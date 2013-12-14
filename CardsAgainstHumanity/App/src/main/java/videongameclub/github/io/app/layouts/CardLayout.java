@@ -5,11 +5,11 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.view.animation.AnimationUtils;
-import android.widget.LinearLayout;
+import android.widget.GridView;
 
 import videongameclub.github.io.app.R;
 
-public class CardLayout extends LinearLayout implements OnGlobalLayoutListener {
+public class CardLayout extends GridView implements OnGlobalLayoutListener {
 
 	public CardLayout(Context context, AttributeSet attrs) {
 		super(context, attrs);
@@ -23,7 +23,6 @@ public class CardLayout extends LinearLayout implements OnGlobalLayoutListener {
 	}
 
 	private void initLayoutObserver() {
-		setOrientation(LinearLayout.VERTICAL);
 		getViewTreeObserver().addOnGlobalLayoutListener(this);
 	}
 

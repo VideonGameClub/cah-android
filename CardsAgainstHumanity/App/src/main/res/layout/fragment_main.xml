@@ -1,33 +1,9 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<videongameclub.github.io.app.layouts.CardLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CardLayoutGrid"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e3e3e3"
     tools:context=".MainActivity$PlaceholderFragment">
 
-    <videongameclub.github.io.app.layouts.CardLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#e3e3e3"
-        android:orientation="vertical">
-
-        <TextView
-            android:text="@string/hello_world"
-            style="@style/nowCardStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:text="@string/hello_world"
-            style="@style/nowCardStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-         <TextView
-            android:text="@string/hello_world"
-            style="@style/nowCardStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </videongameclub.github.io.app.layouts.CardLayout>
-
-</ScrollView>
+</videongameclub.github.io.app.layouts.CardLayout>

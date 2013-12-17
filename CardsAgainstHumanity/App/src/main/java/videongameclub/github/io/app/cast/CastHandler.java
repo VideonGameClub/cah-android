@@ -236,8 +236,10 @@ public class CastHandler extends MediaRouter.Callback implements MediaRouteAdapt
         mMediaRouter.removeCallback(this);
 
         MediaRouteHelper.unregisterMediaRouteProvider(mCastContext);
-        mCastContext.dispose();
-        mCastContext = null;
+        if (mCastContext != null) {
+            mCastContext.dispose();
+            mCastContext = null;
+        }
     }
 
     public MediaRouteSelector getMediaRouteSelector() {
